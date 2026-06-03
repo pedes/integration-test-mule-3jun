@@ -28,3 +28,8 @@ jobs:
         
       - name: Running Integration Tests
         run: bat ./bat.dwl
+
+      - name: Display BAT JSON Report in Console
+        run: |
+          echo "=== BAT CLI JSON REPORT ==="
+          cat /tmp/bat_report_*.json
